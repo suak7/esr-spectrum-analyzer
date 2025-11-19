@@ -9,10 +9,11 @@
 - **Class 2**: Irregular oscillating pattern (noisy/complex spectra)
 
 ## Features
-* Generates synthetic signals with different patterns: Class 0, Class 1, and Class 2
-* Noise addition to simulate realistic experimental conditions
-* Splitting of dataset into training and test sets using PyTorch DataLoader
-* Visualizes performance curves
+* Adds configurable noise and signal variability to simulate realistic experimental conditions.
+* Implements synthetic signal generation --> train/test split --> feeding into PyTorch DataLoader for efficient batch processing.
+* Provides a configurable neural network architecture defined in `config.py`, allowing easy re‑tuning of model capacity and regularization.
+* Includes training scripts, performance monitoring (loss/accuracy curves), and simple visualization of results for quick evaluation of model behaviour.
+* New signal classes can be added, model architecture can be swapped, and data‑augmentation parameters can be adjusted.
 
 ## Installation
 
